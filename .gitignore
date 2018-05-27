@@ -62,7 +62,3 @@ typings/
 
 # vuepress build output
 .vuepress/dist
-
-
-# lock file from npm (which personally don't want to include in repo)
-package-lock.json
