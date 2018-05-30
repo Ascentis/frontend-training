@@ -65,4 +65,21 @@ var e = {
 
 e.log();
 
+// nested function example
+function a() {
+  console.log(this);
+  function b() {
+    console.log(this);
+    function c() {
+      console.log(this);
+      function d() {
+        console.log(this);
+      }
+      d();
+    }
+    c();
+  }
+  b();
+}
 
+a(); // all the this in the nested function refer to global object
