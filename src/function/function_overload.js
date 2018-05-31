@@ -5,6 +5,6 @@ function greet(firstName, lastName, ...others) {
   console.log(lastName);
   console.log(arguments);
   console.log(others);
-};
+}
 
 greet("John", "Wick", "NYC");

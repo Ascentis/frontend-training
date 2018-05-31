@@ -1,5 +1,5 @@
 const person = {
-  printInfo: function (city, state) {
+  printInfo: function(city, state) {
     return `${this.title} ${this.name} ${city} ${state}`;
   }
 };
@@ -29,11 +29,10 @@ console.log("arrow function example");
 console.log(personArrow.printInfo.apply(person1, ["Jax", "FL"]));
 console.log(personArrow.printInfo.call(person1, "Jax", "FL"));
 
-
 // more example, which function don't need to be inside a object
 function shape() {
   console.log(`this.width: ${this.width}, this.height: ${this.height}`);
-};
+}
 var square = {
   height: 10,
   width: 10
