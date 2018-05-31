@@ -1,5 +1,5 @@
 function greetingFactory(language) {
-  return function (firstname, lastname) {
+  return function(firstname, lastname) {
     if (language === "en") {
       console.log(`hello ${firstname} ${lastname}`);
     }

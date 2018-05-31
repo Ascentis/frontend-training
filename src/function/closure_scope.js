@@ -1,8 +1,8 @@
 function greeting(words) {
-  return function (name) {
+  return function(name) {
     console.log(`${words} ${name}`);
   };
-};
+}
 
 greeting("Hi")("John");
 
@@ -11,20 +11,17 @@ greeting("Hi")("John");
 var sayHi = greeting("Hi");
 sayHi("Johnson");
 
-
 // werid part of Closure
 function generateFunctions() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
-    arr.push(
-      function () {
-        console.log(i);
-      }
-    );
+    arr.push(function() {
+      console.log(i);
+    });
   }
 
   return arr;
-};
+}
 
 var funcFactory = generateFunctions();
 console.log("----------------------------- function");
@@ -39,16 +36,15 @@ function generateFunctions2() {
 
   for (var i = 0; i < 3; i++) {
     arr.push(
-      (function (j) {
-        return function () {
+      (function(j) {
+        return function() {
           console.log(j);
         };
-      }(i))
+      })(i)
     );
   }
-
   return arr;
-};
+}
 
 var funcFactory2 = generateFunctions2();
 console.log("----------------------------- function2");
@@ -62,17 +58,15 @@ function generateFunctions3() {
   var arr = [];
 
   for (var i = 0; i < 3; i++) {
-    arr.push(
-      function () {
-        return function () {
-          console.log(positionArr[i]);
-        };
-      }
-    );
+    arr.push(function() {
+      return function() {
+        console.log(positionArr[i]);
+      };
+    });
   }
 
   return arr;
-};
+}
 
 var funcFactory3 = generateFunctions2();
 console.log("----------------------------- function3");

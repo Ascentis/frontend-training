@@ -15,12 +15,10 @@ class Vehicle {
   static create(name, type) {
     return new Vehicle(name, type);
   }
-
 }
 let car = Vehicle.create("Tesla", "car");
 console.log(car.getName()); // Tesla
 console.log(car.getType()); // car
-
 
 class Sedan extends Vehicle {
   constructor(name, type, size) {

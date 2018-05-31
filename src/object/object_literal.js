@@ -12,7 +12,6 @@ console.log("person", person);
 var person2 = { firstName: "John", lastName: "Wick", city: "NYC" };
 console.log("person2", person2);
 
-/* It's  easy to see that using object literal is a simpler and concise way to init Object 
- * They actually do the exactly same thing 
+/* It's  easy to see that using object literal is a simpler and concise way to init Object
+ * They actually do the exactly same thing
  */
-

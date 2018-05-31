@@ -4,7 +4,7 @@ function a() {
   console.log(this);
 }
 
-var b = function () {
+var b = function() {
   this.test = "test";
   console.log(this);
 };
@@ -15,11 +15,10 @@ console.log(test); // should be test
 
 // for all the example above, ahh the this are attached to global scope
 
-
 // example for non-global this, now the "this keyword" bind to the object inside scope
 var c = {
   name: "test",
-  log: function () {
+  log: function() {
     this.name = "new test";
     console.log(this);
   }
@@ -31,11 +30,11 @@ c.log();
 // example for non-global this, now the "this keyword" bind to the object inside scope
 var d = {
   name: "test",
-  log: function () {
+  log: function() {
     this.name = "new test";
     console.log(this);
 
-    var setName = function (newName) {
+    var setName = function(newName) {
       this.name = newName;
       console.log("this inside", this);
     };
@@ -49,12 +48,12 @@ d.log();
 // solution to workaround with this situation
 var e = {
   name: "test",
-  log: function () {
+  log: function() {
     var self = this;
     self.name = "new test";
     console.log(this);
 
-    var setName = function (newName) {
+    var setName = function(newName) {
       self.name = newName;
       console.log("this inside the self/this is now", self);
     };

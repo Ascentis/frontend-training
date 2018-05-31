@@ -11,7 +11,6 @@ function a() {
 let myVar = 1;
 a();
 
-
 function c() {
   function d() {
     // d's outer reference environemt is c()

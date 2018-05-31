@@ -23,7 +23,7 @@
     "no-use-before-define": [2, "nofunc"],
     "quotes": [1, "double", "avoid-escape"],
     "semi": [2, "always"],
-    "keyword-spacing": [2, {"before": true, "after": true}],
+    "keyword-spacing": [2, { "before": true, "after": true }],
     "space-unary-ops": 2
   }
 }
