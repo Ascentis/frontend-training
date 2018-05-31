@@ -65,3 +65,8 @@ typings/
 
 # lock file from npm (which personally don't want to include in repo)
 package-lock.json
+
+# ide
+.vscode/
+.idea/
+
