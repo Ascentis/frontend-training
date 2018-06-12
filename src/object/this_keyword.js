@@ -5,7 +5,7 @@ function a() {
 }
 
 var b = function() {
-  this.test = "test";
+  this.test = 'test';
   console.log(this);
 };
 
@@ -17,9 +17,9 @@ console.log(test); // should be test
 
 // example for non-global this, now the "this keyword" bind to the object inside scope
 var c = {
-  name: "test",
+  name: 'test',
   log: function() {
-    this.name = "new test";
+    this.name = 'new test';
     console.log(this);
   }
 };
@@ -29,16 +29,17 @@ c.log();
 // weird part
 // example for non-global this, now the "this keyword" bind to the object inside scope
 var d = {
-  name: "test",
+  name: 'test',
   log: function() {
-    this.name = "new test";
-    console.log(this);
+    this.name = 'new test';
+    console.log(this); // d scope
 
+    // the inner function scope will bind to global for both declaration or expression
     var setName = function(newName) {
       this.name = newName;
-      console.log("this inside", this);
+      console.log('this inside', this); // weirdly attach to global!!!
     };
-    setName("updated again with new name"); // weirdly attach to global!!!
+    setName('updated again with new name'); // d scope
     console.log(this);
   }
 };
@@ -47,17 +48,17 @@ d.log();
 
 // solution to workaround with this situation
 var e = {
-  name: "test",
+  name: 'test',
   log: function() {
     var self = this;
-    self.name = "new test";
+    self.name = 'new test';
     console.log(this);
 
     var setName = function(newName) {
       self.name = newName;
-      console.log("this inside the self/this is now", self);
+      console.log('this inside the self/this is now', self);
     };
-    setName("updated again with new name"); // weirdly attach to global!!!
+    setName('updated again with new name'); // weirdly attach to global!!!
     console.log(this);
   }
 };

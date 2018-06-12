@@ -4,12 +4,12 @@ function greeting(words) {
   };
 }
 
-greeting("Hi")("John");
+greeting('Hi')('John');
 
 // execution context is still sitting in memory to remember the Hi, which is the key idea of closure
 // GC will only clear it when there's no reference to it anymore (similar to Java)
-var sayHi = greeting("Hi");
-sayHi("Johnson");
+var sayHi = greeting('Hi');
+sayHi('Johnson');
 
 // werid part of Closure
 function generateFunctions() {
@@ -24,7 +24,7 @@ function generateFunctions() {
 }
 
 var funcFactory = generateFunctions();
-console.log("----------------------------- function");
+console.log('----------------------------- function');
 funcFactory[0]();
 funcFactory[1]();
 funcFactory[2]();
@@ -47,7 +47,7 @@ function generateFunctions2() {
 }
 
 var funcFactory2 = generateFunctions2();
-console.log("----------------------------- function2");
+console.log('----------------------------- function2');
 funcFactory2[0]();
 funcFactory2[1]();
 funcFactory2[2]();
@@ -69,7 +69,7 @@ function generateFunctions3() {
 }
 
 var funcFactory3 = generateFunctions2();
-console.log("----------------------------- function3");
+console.log('----------------------------- function3');
 funcFactory3[0]();
 funcFactory3[1]();
 funcFactory3[2]();

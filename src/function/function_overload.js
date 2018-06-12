@@ -7,4 +7,4 @@ function greet(firstName, lastName, ...others) {
   console.log(others);
 }
 
-greet("John", "Wick", "NYC");
+greet('John', 'Wick', 'NYC');

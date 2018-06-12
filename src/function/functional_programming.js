@@ -4,7 +4,7 @@
 function checkLimit(testValue, checker) {
   return checker(testValue);
 }
-console.log("simple example of check value");
+console.log('simple example of check value');
 console.log(checkLimit(10, x => x < 10));
 console.log(checkLimit(10, x => x > 10));
 
@@ -16,7 +16,7 @@ function mapEach(arr, action) {
   return newArr;
 }
 
-console.log("map to each value, very similar to ES6 helper functions");
+console.log('map to each value, very similar to ES6 helper functions');
 console.log(mapEach([1, 2, 3], x => x * 10));
 console.log(mapEach([1, 2, 3], x => x > 10));
 console.log(mapEach([1, 2, 3], x => x < 1));
