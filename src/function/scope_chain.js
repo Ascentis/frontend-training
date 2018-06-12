@@ -1,5 +1,5 @@
 function b() {
-  // b's outer reference envrionment is global
+  // b's outer reference environment is global
   console.log(`myVar in function b(): ${myVar}`);
 }
 

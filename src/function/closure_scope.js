@@ -11,7 +11,7 @@ greeting('Hi')('John');
 var sayHi = greeting('Hi');
 sayHi('Johnson');
 
-// werid part of Closure
+// weird part of Closure
 function generateFunctions() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
@@ -29,8 +29,8 @@ funcFactory[0]();
 funcFactory[1]();
 funcFactory[2]();
 
-// solve this werid part, we can use ES6 let keyword (instead of var), or we can do following
-// This solution will create a new execution context, so i is no longer refer to the orignal
+// solve this weird part, we can use ES6 let keyword (instead of var), or we can do following
+// This solution will create a new execution context, so i is no longer refer to the original
 function generateFunctions2() {
   var arr = [];
 
@@ -51,25 +51,3 @@ console.log('----------------------------- function2');
 funcFactory2[0]();
 funcFactory2[1]();
 funcFactory2[2]();
-
-// Try another workaround
-function generateFunctions3() {
-  const positionArr = [0, 1, 2];
-  var arr = [];
-
-  for (var i = 0; i < 3; i++) {
-    arr.push(function() {
-      return function() {
-        console.log(positionArr[i]);
-      };
-    });
-  }
-
-  return arr;
-}
-
-var funcFactory3 = generateFunctions2();
-console.log('----------------------------- function3');
-funcFactory3[0]();
-funcFactory3[1]();
-funcFactory3[2]();

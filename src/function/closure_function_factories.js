@@ -1,11 +1,11 @@
 function greetingFactory(language) {
-  return function(firstname, lastname) {
+  return function(firstName, lastName) {
     if (language === 'en') {
-      console.log(`hello ${firstname} ${lastname}`);
+      console.log(`hello ${firstName} ${lastName}`);
     }
 
     if (language === 'es') {
-      console.log(`hola ${firstname} ${lastname}`);
+      console.log(`hola ${firstName} ${lastName}`);
     }
   };
 }

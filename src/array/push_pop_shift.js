@@ -1,6 +1,6 @@
 let arr = [1, 2, 3];
 
-// unshif will add a value to the beginning
+// un-shif will add a value to the beginning
 console.log('arr.unshift(1)', arr.unshift(4));
 console.log('arr', arr);
 console.log('arr.shift()', arr.shift());

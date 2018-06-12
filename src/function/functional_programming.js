@@ -1,4 +1,4 @@
-// JS has first class function, we can pass functiona aroud just like variables
+// JS has first class function, we can pass functions around just like variables
 // This means it's ok to pass function as argument to another function
 
 function checkLimit(testValue, checker) {

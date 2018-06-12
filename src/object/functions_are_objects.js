@@ -12,7 +12,7 @@ function sayHi() {
   console.log('hi');
 }
 
-/* function expression actually return a function and assocaite with the name */
+/* function expression actually return a function and associate with the name */
 var anonymousSayHi = function() {
   console.log('anonymous hi');
 };

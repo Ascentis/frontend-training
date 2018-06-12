@@ -13,7 +13,7 @@ console.log('person1', person1);
 
 console.log('person2', peßrson2);
 console.log('person2 fields', person2.name, person2.greeting);
-person2.name = 'Janne';
+person2.name = 'Jane';
 console.log('person2 greeting', person2.greeting());
 
 Person.prototype.printName = function() {
