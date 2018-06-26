@@ -13,5 +13,11 @@ function test0(name) {
 
 // always use the following syntax
 var test2 = (function(name) {
+  let field = 10;
   console.log(`test2 ${name}`);
+  return {
+    field
+  };
 })('wick');
+
+console.log('test2', test2);

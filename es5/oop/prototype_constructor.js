@@ -11,7 +11,7 @@ var person2 = Object.create(person1);
 
 console.log('person1', person1);
 
-console.log('person2', peßrson2);
+console.log('person2', person2);
 console.log('person2 fields', person2.name, person2.greeting);
 person2.name = 'Jane';
 console.log('person2 greeting', person2.greeting());

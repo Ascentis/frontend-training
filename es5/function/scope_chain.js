@@ -13,7 +13,7 @@ a();
 
 function c() {
   function d() {
-    // d's outer reference environemt is c()
+    // d's outer reference environment is c()
     console.log(`my new var in function d() ${myNewVar}`);
   }
   let myNewVar = 2;
