@@ -1,7 +1,7 @@
 const iterable1 = new Object();
 
-console.log("example1 -------------");
-iterable1[Symbol.iterator] = function* () {
+console.log('example1 -------------');
+iterable1[Symbol.iterator] = function*() {
   yield 1;
   yield 2;
   yield 3;
@@ -10,8 +10,8 @@ iterable1[Symbol.iterator] = function* () {
 console.log([...iterable1]);
 // expected output: Array [1, 2, 3]
 
-console.log("example2 -------------");
-function* foo(){
+console.log('example2 -------------');
+function* foo() {
   yield 1;
   yield 2;
 }
@@ -22,7 +22,7 @@ for (let o of foo()) {
   break;
 }
 
-console.log("example3 -------------");
+console.log('example3 -------------');
 var iterable = {
   [Symbol.iterator]() {
     return {

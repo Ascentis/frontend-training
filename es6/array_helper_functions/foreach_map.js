@@ -19,6 +19,6 @@ arr1.forEach((num, index) => {
   // we can use ```return arr1[index] = num * 2;```, though it is not very necessary
 });
 
-console.log("manually set value", arr1);
+console.log('manually set value', arr1);
 
 // Also, map is more efficient way

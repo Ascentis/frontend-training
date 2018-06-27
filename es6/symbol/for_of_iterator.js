@@ -8,9 +8,9 @@ for (let i of list) {
   console.log(i); // "4", "5", "6"
 }
 
-console.log("example2 -----------------");
-let pets = new Set(["Cat", "Dog", "Hamster"]);
-pets["species"] = "mammals";
+console.log('example2 -----------------');
+let pets = new Set(['Cat', 'Dog', 'Hamster']);
+pets['species'] = 'mammals';
 
 for (let pet in pets) {
   console.log(pet); // "species"

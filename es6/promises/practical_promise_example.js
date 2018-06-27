@@ -7,13 +7,13 @@ const promise = new Promise((resolve, reject) => {
 
 promise
   .then(() => {
-    console.log("promise resolved");
+    console.log('promise resolved');
   })
   .then(() => {
-    console.log("run after");
+    console.log('run after');
   })
   .catch(() => {
-    console.log("promise rejected");
+    console.log('promise rejected');
   });
 
 // another example
@@ -27,11 +27,11 @@ const promise2 = new Promise((resolve, reject) => {
 
 promise2
   .then(() => {
-    console.log("promise resolved");
+    console.log('promise resolved');
   })
   .then(() => {
-    console.log("run after");
+    console.log('run after');
   })
   .catch(() => {
-    console.log("promise rejected");
+    console.log('promise rejected');
   });

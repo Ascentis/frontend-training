@@ -5,11 +5,11 @@ const promise = new Promise((resolve, reject) => {
 
 promise
   .then(() => {
-    console.log("promise resolved");
+    console.log('promise resolved');
   })
   .then(() => {
-    console.log("run after");
+    console.log('run after');
   })
   .catch(() => {
-    console.log("promise rejected");
+    console.log('promise rejected');
   });
