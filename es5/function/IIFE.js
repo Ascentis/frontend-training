@@ -11,7 +11,7 @@ function test0(name) {
   console.log(`test1 ${name}`);
 })('john wick'); // notice that the argument "john wick" can be either inside or outside
 
-// always use the following syntax
+// always use the following syntax to do a "namespace" encapsulation
 var test2 = (function(name) {
   let field = 10;
   console.log(`test2 ${name}`);

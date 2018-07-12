@@ -12,5 +12,7 @@ console.log(
   })
 );
 
-// The difference between find and filter is: find return the first element matching requirement,
-// filter return all elements matching requirement in an array
+/**
+ * The difference between find and filter is: find return the first element matching requirement,
+ * filter return all elements matching requirement in an array
+ */

@@ -1,3 +1,7 @@
+/**
+ * This example need ot be run in Chrome, rather than local, because we access the window object here
+ */
+
 // notice, this is a safe approach, because the greeting inside is different from the global one
 var greeting = 'hello';
 

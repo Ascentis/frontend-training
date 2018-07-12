@@ -1,3 +1,6 @@
+/**
+ * The following example is a great practical example to detect if a string has balance parentheses
+ */
 function balancedParens(string) {
   return !string.split('').reduce(function(previous, char) {
     if (previous < 0) {

@@ -1,3 +1,7 @@
+/**
+ * JS is based on Prototype based inheritance, which is quite tricky compare to class inheritance
+ * But need to aware that in JS class inheritance is just syntax sugar, behind the scene prototype inheritance is still used
+ */
 function Person(name, ...args) {
   this.name = name;
   this.greeting = function() {

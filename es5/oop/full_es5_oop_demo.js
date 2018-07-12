@@ -1,3 +1,8 @@
+/**
+ * No need to fully understand this
+ * This is simply to show how confusing es5 flavor OOP is...
+ */
+
 function Person(first, last, age, gender, interests) {
   this.name = {
     first,

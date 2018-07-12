@@ -14,7 +14,7 @@ var john = {
 // We should never do the following ever, it's just demo
 john.__proto__ = person;
 console.log(john.getFullName()); // this will work, but this way we have performance issue
-console.log(john.__proto__.firstName); // will be john, because it hides the default due to protptype chain
+console.log(john.__proto__.firstName); // will be john, because it hides the default due to prototype chain
 
 var jane = {
   firstName: 'Jane'

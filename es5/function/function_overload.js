@@ -1,4 +1,4 @@
-// There no actual overload in JS function
+// There's no actual overload in JS function
 // On the other hand, JS function support optional arguments, which works like overload
 function greet(firstName, lastName, ...others) {
   console.log(firstName);

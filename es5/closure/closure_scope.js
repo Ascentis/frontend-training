@@ -30,7 +30,7 @@ funcFactory[1]();
 funcFactory[2]();
 
 // solve this weird part, we can use ES6 let keyword (instead of var), or we can do following
-// This solution will create a new execution context, so i is no longer refer to the original
+// This solution will create a new context, so i is no longer refer to the original
 function generateFunctions2() {
   var arr = [];
 

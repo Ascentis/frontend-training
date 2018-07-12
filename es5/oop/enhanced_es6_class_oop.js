@@ -16,7 +16,9 @@ class Vehicle {
     return new Vehicle(props);
   }
 }
+
 let car = Vehicle.create({ name: 'Tesla', type: 'car' });
+
 car.haha = 'haha';
 console.log(car.name);
 console.log(car.haha);

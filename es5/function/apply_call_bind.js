@@ -23,8 +23,13 @@ console.log('bind example');
 console.log(person.printInfo.bind(person1)('Jax', 'FL'));
 console.log(person.printInfo.bind(person1, 'Jax')('FL'));
 
-// using arrow function will automatically bind "this" to the scope of declaration
-// using arrow function is equivalent to person.printInfo.bind(person)
+/**
+ * using arrow function will automatically bind "this" to the scope of declaration
+ * using arrow function is equivalent to person.printInfo.bind(person)
+ *
+ * By official documentation of Mozilla (which could be tricky to understand):
+ * "Arrow functions do not have their own arguments object. Thus arguments is simply a reference to the arguments of the enclosing scope"
+ */
 console.log('arrow function example');
 console.log(personArrow.printInfo.apply(person1, ['Jax', 'FL']));
 console.log(personArrow.printInfo.call(person1, 'Jax', 'FL'));

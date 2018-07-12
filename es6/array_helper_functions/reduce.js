@@ -1,5 +1,6 @@
 var numbers = [1, 2, 3];
 
+// first argument for reduce callback function is the eventual return value, second argument is processing step
 var sum = numbers.reduce(function(sum, number) {
   return sum + number;
 }, 0);

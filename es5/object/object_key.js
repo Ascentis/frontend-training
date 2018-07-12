@@ -11,6 +11,7 @@ console.log("obj['1']", obj['1']);
 var key1 = { name: 1 };
 var key2 = { key: 1 };
 
+// all the object type as key will be coerced to the same String "[Object object]""
 var obj2 = {
   [key1]: 1,
   [key2]: 2

@@ -1,3 +1,8 @@
+/**
+ * function currying example
+ * currying mean we can call function like func(arg1)(arg2)
+ */
+
 function func1(var1) {
   return function(var2) {
     return var1 * var2;

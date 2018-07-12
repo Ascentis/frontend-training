@@ -29,8 +29,8 @@ Car.prototype.getColor = function() {
   return this.color;
 };
 
-const carlysCar = new Car('blue', 'ferarri', 2015);
-const jimsCar = new Car('red', 'tesla', 2014);
+const hisCar = new Car('blue', 'ford', 2015);
+const herCar = new Car('red', 'tesla', 2014);
 
-console.log(carlysCar.getColor());
-console.log(jimsCar.getColor());
+console.log(hisCar.getColor());
+console.log(herCar.getColor());

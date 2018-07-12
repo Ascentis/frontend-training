@@ -1,3 +1,7 @@
+/**
+ * This is quite tricky, recommend to run each section of this file one-by-one in Chrome
+ */
+
 console.log(this);
 
 function a() {
@@ -13,9 +17,9 @@ a();
 b();
 console.log(test); // should be test
 
-// for all the example above, ahh the this are attached to global scope
+// for all the example above, the "this" are attached to global scope
 
-// example for non-global this, now the "this keyword" bind to the object inside scope
+// example for non-global "this", now the "this" keyword bind to the object inside scope
 var c = {
   name: 'test',
   log: function() {
@@ -58,7 +62,7 @@ var e = {
       self.name = newName;
       console.log('this inside the self/this is now', self);
     };
-    setName('updated again with new name'); // weirdly attach to global!!!
+    setName('updated again with new name with solution of passing self');
     console.log(this);
   }
 };

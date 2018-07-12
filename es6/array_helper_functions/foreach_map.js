@@ -13,10 +13,10 @@ console.log(
   })
 );
 
-// We can notice the return in foreach not actully return the value for each element (just a runner, not a mutator)
+// We notice the return in foreach not actually return the value for each element (just a runner, not a mutator)
 arr1.forEach((num, index) => {
   arr1[index] = num * 2;
-  // we can use ```return arr1[index] = num * 2;```, though it is not very necessary
+  // we can use ```return arr1[index] = num * 2;```, though it is not necessary
 });
 
 console.log('manually set value', arr1);
